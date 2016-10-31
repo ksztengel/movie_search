@@ -1,8 +1,8 @@
 
 <form name="getMovie" ng-submit="getMovies(movie)">
-    <label for="title">Please enter a movie title: </label>
+    <h1><label for="title">Please enter a movie title: </label>
     <input type="text" id="title" name="title" ng-model="movie.title" class="validate" required>
-    <button type="submit" class="btn btn success">search</button>
+    <button type="submit" class="btn btn success">search</button></h1>
 </form>
 
 <div ng-repeat="movie in view.omdb">
@@ -16,3 +16,4 @@
     </div></a>
   </div>
 </div>
+  <img id="brand" src="https://s3.amazonaws.com/ionic-marketplace/omdb-search/icon.png" alt="Brand">
