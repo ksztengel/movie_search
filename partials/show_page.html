@@ -1,3 +1,22 @@
-<p>This is show_page template</p>
 
-<p>Message: {{view.message}}</p>
+<div class="panel panel-default">
+   <div class="panel-body">
+     <div class="media">
+       <div class="media-left">
+         <img class="media-object" ng-src="{{results.Poster}}">
+       </div>
+       <div class="media-body">
+         <h3 class="media-heading">{{results.Title}} ({{results.Year}})</h3>
+         <ul>
+           <li>Actors: {{results.Actors}}</li>
+           <li>Awards: {{results.Awards}}</li>
+           <li>Country: {{results.Country}}</li>
+           <li>Genre: {{results.Genre}}</li>
+           <li>Plot: {{results.Plot}}</li>
+           <li>Rated: {{results.Rated}}</li>
+           <li>Runtime: {{results.Runtime}}</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </div>
